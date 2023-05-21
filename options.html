@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chesstraction</title>
+    <style>
+      #options {
+        font-family: Arial, sans-serif;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      select,
+      button {
+        font-size: 14px;
+        width: 150px;
+        height: 30px;
+      }
+
+      #status {
+        font-family: Arial, sans-serif;
+        position: absolute;
+        top: 0;
+        display:flex;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+      }
+
+      #save {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        top: 8px;
+      }
+
+      #save:hover {
+        background-color: #45a049;
+      }
+
+      /* Remove the background on the div */
+      #status {
+        background-color: transparent;
+        position: relative;
+        top: 30px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div id="status"></div>
+    <div id="options">
+        <div>
+        <label for="stringType">String type:</label>
+        <select id="stringType">
+            <option value="pgn">pgn</option>
+            <option value="fen">fen</option>
+        </select>
+        </div>
+        
+
+        <div>
+        <label for="mode">Mode:</label>
+        <select id="mode">
+            <option value="copy">Copy</option>
+            <option value="lichess">Lichess</option>
+        </select>
+        </div>
+
+
+        <div>
+        <button id="save">Save</button>
+        </div>
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>

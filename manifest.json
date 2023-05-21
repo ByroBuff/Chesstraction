@@ -1,0 +1,17 @@
+{
+    "name": "Chesstraction",
+    "version": "1.0",
+    "description": "extract a live chess.com game",
+    "options_page": "options.html",
+    "manifest_version": 3,
+    "action": {
+      "default_title": "extract a live chess.com game"
+    },
+    "permissions": ["activeTab", "scripting", "tabs", "storage"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "128": "icon.png"
+    }
+  }
