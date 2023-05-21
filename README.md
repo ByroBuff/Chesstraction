@@ -5,10 +5,10 @@ Chesstraction is a chrome extension that allows a user to save the fen/pgn strin
 ## Installation
 ```
 1. Download the repo as a zip or git clone it
-2. go to chrome://extensions
+2. Go to chrome://extensions
 3. Enable developer mode in the top right
 4. Click 'load unpacked'
-5. navigate to and select the extracted repo
+5. Navigate to and select the extracted repo
 6. You're done!
 ```
 
